@@ -15,7 +15,7 @@ public class Lesson1Example {
 
         System.out.println(result);
 
-        int a =10;
+        double a =10.1;
         int b = 4;
         double result1 = a / (double) b;
 
