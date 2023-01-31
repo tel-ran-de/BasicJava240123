@@ -5,6 +5,9 @@ public class CarDemo {
 
         Car mySuperCar = new Car();
 
+        // создали экземпляр класса Car
+
+
         mySuperCar.model = "Mercedes G-class";
         mySuperCar.numbersOfWheel = 4;
         mySuperCar.isElectric = false;
@@ -17,6 +20,13 @@ public class CarDemo {
         System.out.println("Distance is " + mySuperCar.distance);
 
         Car myFriendCar = new Car();
+        /*
+
+        Создали несколько экземпляров класса
+        заполнили поля данными и
+        вывели на экран значения переменных экземпляра класса
+
+         */
 
         myFriendCar.model = " Tesla Type S";
         myFriendCar.numbersOfWheel = 4;
