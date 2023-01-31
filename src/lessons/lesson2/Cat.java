@@ -5,12 +5,5 @@ public class Cat {
     int age;
     String color;
 
-    @Override
-    public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", color='" + color + '\'' +
-                '}';
-    }
+
 }

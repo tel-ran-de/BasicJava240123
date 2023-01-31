@@ -5,12 +5,4 @@ public class Dog {
     int age;
     String breed;
 
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", breed='" + breed + '\'' +
-                '}';
-    }
 }

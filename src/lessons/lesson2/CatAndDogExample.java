@@ -17,6 +17,8 @@ public class CatAndDogExample {
 
         System.out.println(ourSecondCat);
 
+        System.out.println(myFirstDog.name + " " + myFirstDog.age + " " + myFirstDog.breed);
+
         myFirstDog.name = "Bobik";
         myFirstDog.age = 2;
         myFirstDog.breed = "Kolly";
@@ -33,13 +35,15 @@ public class CatAndDogExample {
         ourSecondCat.age = 2;
         ourSecondCat.color = "Red";
 
-        System.out.println(myFirstDog);
+        System.out.println("---------------");
 
-        System.out.println(mySecondDog);
+        System.out.println(myFirstDog.name + " " + myFirstDog.age + " " + myFirstDog.breed);
 
-        System.out.println(ourFirstCat);
+        System.out.println(mySecondDog.name + " " + mySecondDog.age + " " + mySecondDog.breed);
 
-        System.out.println(ourSecondCat);
+        System.out.println(ourFirstCat.name + " " + ourFirstCat.age + " " + ourFirstCat.color);
+
+        System.out.println(ourSecondCat.name + " " + ourSecondCat.age + " " + ourSecondCat.color);
 
 
 
