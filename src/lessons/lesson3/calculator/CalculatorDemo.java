@@ -26,5 +26,13 @@ public class CalculatorDemo {
         double resultOfDiv = calculatorOperations.div(a,b);
         System.out.println(resultOfDiv);
 
+        double double1 = 5.3;
+        float float1 = 5.3f;
+        int int1 = 5;
+
+        System.out.println(calculatorOperations.divDoubleParameters(5.2,1.5));
+        System.out.println(calculatorOperations.divDoubleParameters(5,2));
+
+
     }
 }

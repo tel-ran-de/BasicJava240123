@@ -20,7 +20,14 @@ public class CalculatorOperations {
 
     public double div(int parameter1, int parameter2){
         double resultOfDiv = parameter1 / (double) parameter2;
+        // 5 / 2.0 = 2,5
+        // 5 / 2 = 2
+
         return resultOfDiv;
     }
 
+    public double divDoubleParameters(double parameter1, double parameter2){
+        double resultOfDiv = parameter1 / parameter2;
+        return resultOfDiv;
+    }
 }
