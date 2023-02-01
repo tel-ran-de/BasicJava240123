@@ -20,6 +20,5 @@ public class CalculatorUserInputExample {
         double divOFNumbersDouble = calculatorOperations.divDoubleParameters(xDouble,yDouble);
         System.out.println("Result of division of numbers is " + divOFNumbersDouble);
 
-
     }
 }
