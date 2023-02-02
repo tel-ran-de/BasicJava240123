@@ -19,7 +19,7 @@ public class CatDemo {
 
         System.out.println(message);
 
-        Cat myCat3 = new Cat("Murzik");
+        //Cat myCat3 = new Cat("Murzik");
 
     }
 }
