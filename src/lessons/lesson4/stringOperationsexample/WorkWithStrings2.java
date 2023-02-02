@@ -26,13 +26,16 @@ public class WorkWithStrings2 {
 
         System.out.println(textAfterTrim);
 
-        String oldString = "In Java, Olga the best, super java programmer!";
+        String oldString = "In java, Olga the best, super java programmer!";
 
-        String newString = oldString.replace('J','*');
+        String newString = oldString.replace('j','*');
         System.out.println(newString);
 
-        newString = oldString.replace("Olga","All group 240123");
+        newString = oldString.replace("Olga","@All group 240123");
         System.out.println(newString);
+
+
+        System.out.println(newString.indexOf('@'));
 
 
     }
