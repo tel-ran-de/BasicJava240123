@@ -37,6 +37,10 @@ public class WorkWithStrings2 {
 
         System.out.println(newString.indexOf('@'));
 
+        String finalModifyText = textToLowCase.trim();
+        finalModifyText = finalModifyText.replace(" ","");
+        System.out.println(finalModifyText);
+
 
     }
 }
