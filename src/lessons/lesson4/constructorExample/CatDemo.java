@@ -13,11 +13,13 @@ public class CatDemo {
 
         System.out.println(message);
 
-        Cat myCat2 = new Cat();
+        Cat myCat2 = new Cat("Lucky","grey",3);
+
         message = "My cat name - " + myCat2.name + " color - " + myCat2.color + " age - " + myCat2.age;
 
         System.out.println(message);
 
+        Cat myCat3 = new Cat("Murzik");
 
     }
 }
