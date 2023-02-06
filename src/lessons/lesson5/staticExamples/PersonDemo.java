@@ -2,6 +2,7 @@ package lessons.lesson5.staticExamples;
 
 public class PersonDemo {
     public static void main(String[] args) {
+        System.out.println();
         Person personOlga = new Person();
         personOlga.name = "Olga";
        // personOlga.town = "Dnepropetrovsk";
