@@ -36,6 +36,24 @@ public class CatDemo {
         uo.printCat(myFirstCat);
         uo.printCat(mySecondCat);
 
+        System.out.println(myFirstCat);
+        System.out.println(mySecondCat);
+//------------------------------------------------------
+
+        OurCat ourCats = new OurCat();
+
+        ourCats.cat1 = myFirstCat;
+        ourCats.cat2 = mySecondCat;
+
+        System.out.println(ourCats.cat1);
+
+        System.out.println(ourCats.cat2);
+
+        System.out.println(ourCats.cat3);
+
+        uo.printCat(ourCats.cat1);
+        uo.printCat(ourCats.cat2);
+        //uo.printCat(ourCats.cat3); //- выдало бы ошибку!!! так как у нас нет данных о cat3
 
 
 

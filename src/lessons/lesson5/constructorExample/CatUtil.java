@@ -10,6 +10,8 @@ public class CatUtil {
         boolean catHungry = ui.userInputBoolean("Is cat hungry? ");
 
         Cat newCat = new Cat(catName,catColor,catAge,catHungry);
+        System.out.println("Create new cat - "+newCat);
+
 
         return newCat;
     }
