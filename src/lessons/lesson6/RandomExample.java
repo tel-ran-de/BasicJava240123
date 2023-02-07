@@ -1,4 +1,4 @@
-package lessons.lesson6.lesson5;
+package lessons.lesson6;
 
 public class RandomExample {
     public static void main(String[] args) {

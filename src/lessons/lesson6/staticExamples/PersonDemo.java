@@ -1,15 +1,15 @@
-package lessons.lesson6.lesson5.staticExamples;
+package lessons.lesson6.staticExamples;
 
 public class PersonDemo {
     public static void main(String[] args) {
         System.out.println();
-        Person personOlga = new Person();
-        personOlga.name = "Olga";
+        Person personOlga = new Person("Olga");
+        //personOlga.name = "Olga Petrovna";
         personOlga.town = "Dnepropetrovsk";
 
 
-        Person personPetr = new Person();
-        personPetr.name = "Petr";
+        Person personPetr = new Person("Petr");
+       // personPetr.name = "Petr";
        personPetr.town = "Dnepropetrovsk";
 
 

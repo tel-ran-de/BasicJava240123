@@ -1,4 +1,4 @@
-package lessons.lesson6.lesson5.staticExamples;
+package lessons.lesson6.staticExamples;
 
 public class StaticVarAndMethods {
 
