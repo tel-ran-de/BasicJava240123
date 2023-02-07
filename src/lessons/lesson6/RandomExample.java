@@ -5,12 +5,12 @@ public class RandomExample {
         /*
             Math.random() *  (max - min + 1) + min
          */
-        double random1 =  Math.random() *  (50 - 10 + 1) + 10;
+        int random1 =  (int) (Math.random() *  (50 - 10 + 1) + 10);
 
-        double random2 =  Math.random() *  (100 - 0 + 1) + 0;
-        double random3 =  Math.random() *  (150 - 120 + 1) + 120;
-        double random4 =  Math.random() *  (1000 - 550 + 1) + 550;
-        double random5 =  Math.random() *  (1000000 - 150000 + 1) + 150000;
+        int random2 =  (int) (Math.random() *  (5 - 0 + 1) + 0);
+        int random3 =  (int) (Math.random() *  (150 - 120 + 1) + 120);
+        int random4 =  (int) (Math.random() *  (1000 - 550 + 1) + 550);
+        int random5 =  (int) (Math.random() *  (1000000 - 150000 + 1) + 150000);
 
 
 
