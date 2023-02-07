@@ -5,12 +5,12 @@ public class PersonDemo {
         System.out.println();
         Person personOlga = new Person();
         personOlga.name = "Olga";
-       // personOlga.town = "Dnepropetrovsk";
+        personOlga.town = "Dnepropetrovsk";
 
 
         Person personPetr = new Person();
         personPetr.name = "Petr";
-      //  personPetr.town = "Dnepropetrovsk";
+       personPetr.town = "Dnepropetrovsk";
 
 
 
@@ -26,7 +26,7 @@ public class PersonDemo {
         System.out.println(personPetr.town);
 
 
-        personPetr.town = "Dnepr";
+        personPetr.town = "Kiev";
 
         System.out.println("======== Olga =====");
         System.out.println(personOlga.name);
