@@ -11,6 +11,12 @@ public class TypeExamples {
 
         double xDouble = xLong;
 
+        float xFloat = xLong;
+
+        float yFloat = 125.241f;
+
+        System.out.println(yFloat);
+
         long yInt = (long) y;
 
         System.out.println(yInt);
