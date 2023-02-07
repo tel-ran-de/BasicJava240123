@@ -20,9 +20,9 @@ public class RandomExample2 {
         int random2 = randomWithClass.nextInt(diff+1) + min;
 
 
-        System.out.println("1st random example : "+ random1 );
-        System.out.println("1st random example : "+ random2 );
-        System.out.println("1st random example : "+ randomWithClass.nextInt(100) );
+        System.out.println("1st random example : "+ random1 ); // Диапазон из всех целых чисел от -... до +...
+        System.out.println("2st random example : "+ random2 ); // Диапазон значений от min до max
+        System.out.println("3st random example : "+ randomWithClass.nextInt(100) ); // Диапазон значений от 0 до 100
 
     }
 }
