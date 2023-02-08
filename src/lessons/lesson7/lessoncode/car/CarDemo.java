@@ -86,6 +86,12 @@ public class CarDemo {
         System.out.println("New car manufacturer year- " + newCarBMW.manufacturer.year);
         System.out.println("New car car colors details - " + newCarBMW.carColors.color);
 
+//================================================================
+
+        newCar.setSpeedLimit(250);
+        System.out.println("Mercedes new  speed limit - " + newCar.getSpeedLimit());
+        newCarBMW.setSpeedLimit(300);
+        System.out.println("BMW new speed limit - " + newCarBMW.getSpeedLimit());
 
     }
 }
