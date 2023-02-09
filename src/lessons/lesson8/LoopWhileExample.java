@@ -7,8 +7,8 @@ public class LoopWhileExample {
 
         Scanner scanner = new Scanner(System.in);
 
-        int x;
-        int y;
+        double x;
+        double y;
 
         boolean condition = true;
 
@@ -19,10 +19,10 @@ public class LoopWhileExample {
             System.out.println("Please enter two numbers. If you will enter first number 0 - exit");
 
             System.out.println("Enter x number -");
-            x = scanner.nextInt();
+            x = scanner.nextDouble();
 
             System.out.println("Enter y number -");
-            y = scanner.nextInt();
+            y = scanner.nextDouble();
 
             System.out.println("Add result - " + (x + y));
 

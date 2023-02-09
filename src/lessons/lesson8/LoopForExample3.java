@@ -6,6 +6,7 @@ public class LoopForExample3 {
     public static void main(String[] args) {
         Random random = new Random();
 
+
         for (int i = 50; i >= 0; i--) {
             int calculationResult;
 
@@ -17,5 +18,6 @@ public class LoopForExample3 {
 
             System.out.println("i = "+ i + " random = " + calculationResult);
         }
+
     }
 }
