@@ -81,14 +81,10 @@ public class NumbersUtils {
         } else if (checkGrow(number3, number2, number1)) {
             printData(number3,number2,number1);
         }
-
-
-
     }
 
     private  boolean checkGrow(int n1, int n2, int n3) {
         if((n1 <= n2) && (n2 <= n3)){
-
             return true;}
         return false;
     }
@@ -96,6 +92,4 @@ public class NumbersUtils {
     private void printData(int n1, int n2, int n3){
         System.out.println("Here are numbers in increasing order :" + n1 + ", " + n2 + ", " + n3) ;
     }
-
-
 }
