@@ -42,16 +42,44 @@ public class NumbersUtils {
 
 
     void printGrowing(int number1, int number2, int number3){
+
+
+//        if((number1 > number2) && (number2 > number3)){
+//            System.out.println("Here are numbers in increasing order :" + number1 + ", " + number2 + ", " + number3) ;
+//        }
+//
+//        if((number1 > number3) && (number3 > number2)){
+//            System.out.println("Here are numbers in increasing order :" + number1 + ", " + number3 + ", " + number2) ;
+//        }
+//
+//        if((number2 > number1) && (number1 > number3)){
+//            System.out.println("Here are numbers in increasing order :" + number2 + ", " + number1 + ", " + number3) ;
+//        }
+//
+//        if((number2 > number3) && (number3 > number1)){
+//            System.out.println("Here are numbers in increasing order :" + number2 + ", " + number3 + ", " + number1) ;
+//        }
+//
+//        if((number3 > number1) && (number1 > number2)){
+//            System.out.println("Here are numbers in increasing order :" + number3 + ", " + number1 + ", " + number2) ;
+//        }
+//
+//        if((number3 > number2) && (number2 > number1)){
+//            System.out.println("Here are numbers in increasing order :" + number3 + ", " + number2 + ", " + number1) ;
+//        }
+
         checkGrow(number1, number2, number3); // вызов метода  checkGrow  - > 1, 2, 3
+        checkGrow(number1, number3, number2); // вызов метода  checkGrow  - > 1, 3, 2
+
         checkGrow(number2, number1, number3);// вызов метода  checkGrow  - > 2, 1, 3
+        checkGrow(number2, number3, number1);// вызов метода  checkGrow  - > 2, 3, 1
+
         checkGrow(number3, number1, number2);// вызов метода  checkGrow  - > 3, 1, 2
         checkGrow(number3, number2, number1);// вызов метода  checkGrow  - > 3, 2, 1
-
-
     }
 
-    private static void checkGrow(int n1, int n2, int n3) {
-        if((n1 > n2) && (n2 > n3)){
+    private  void checkGrow(int n1, int n2, int n3) {
+        if((n1 <= n2) && (n2 <= n3)){
             System.out.println("Here are numbers in increasing order :" + n1 + ", " + n2 + ", " + n3) ;
         }
     }

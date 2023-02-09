@@ -24,6 +24,7 @@ public class IfRandomApplication {
 
         UserInput ui = new UserInput();
         RandomGenerator rg = new RandomGenerator();
+        NumbersUtils nu = new NumbersUtils();
 
         int startRangeValue = 10;
         int endRangeValue = 100;
@@ -40,7 +41,10 @@ public class IfRandomApplication {
 
         int thirdData = rg.integerRandomGenerator(message,startRangeValue,endRangeValue);
 
+        System.out.println(firstData + " " + secondData + " " + thirdData);
 
+        nu.numbersControl(firstData,secondData,thirdData);
+        nu.printGrowing(firstData,secondData,thirdData);
 
     }
 
