@@ -13,6 +13,7 @@ public class LoopWhileExample {
         boolean condition = true;
 
 
+
         while (condition == true) {
 
             System.out.println("Please enter two numbers. If you will enter first number 0 - exit");
@@ -25,10 +26,13 @@ public class LoopWhileExample {
 
             System.out.println("Add result - " + (x + y));
 
-            if (( x== 0) && ( y == 0 )) {
+            if (( x<= 0) && ( y <= 0 )) {
                 condition = false;
             }
 
+            if (x + y > 1000) {
+                condition = false;
+            }
         }
 
         System.out.println("Stop loop while");
