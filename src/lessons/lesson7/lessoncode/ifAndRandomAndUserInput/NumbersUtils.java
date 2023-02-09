@@ -68,20 +68,33 @@ public class NumbersUtils {
 //            System.out.println("Here are numbers in increasing order :" + number3 + ", " + number2 + ", " + number1) ;
 //        }
 
-        checkGrow(number1, number2, number3); // вызов метода  checkGrow  - > 1, 2, 3
-        checkGrow(number1, number3, number2); // вызов метода  checkGrow  - > 1, 3, 2
+        if (checkGrow(number1, number2, number3)) {
+            printData(number1,number2,number3);
+        } else if (checkGrow(number1, number3, number2)) {
+            printData(number1,number3,number2);
+        } else if (checkGrow(number2, number1, number3)) {
+            printData(number2,number1,number3);
+        } else if (checkGrow(number2, number3, number1)) {
+            printData(number2,number3,number1);
+        } else if (checkGrow(number3, number1, number2)) {
+            printData(number3,number1,number2);
+        } else if (checkGrow(number3, number2, number1)) {
+            printData(number3,number2,number1);
+        }
 
-        checkGrow(number2, number1, number3);// вызов метода  checkGrow  - > 2, 1, 3
-        checkGrow(number2, number3, number1);// вызов метода  checkGrow  - > 2, 3, 1
 
-        checkGrow(number3, number1, number2);// вызов метода  checkGrow  - > 3, 1, 2
-        checkGrow(number3, number2, number1);// вызов метода  checkGrow  - > 3, 2, 1
+
     }
 
-    private  void checkGrow(int n1, int n2, int n3) {
+    private  boolean checkGrow(int n1, int n2, int n3) {
         if((n1 <= n2) && (n2 <= n3)){
-            System.out.println("Here are numbers in increasing order :" + n1 + ", " + n2 + ", " + n3) ;
-        }
+
+            return true;}
+        return false;
+    }
+
+    private void printData(int n1, int n2, int n3){
+        System.out.println("Here are numbers in increasing order :" + n1 + ", " + n2 + ", " + n3) ;
     }
 
 

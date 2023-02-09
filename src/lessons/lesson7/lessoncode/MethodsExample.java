@@ -1,4 +1,4 @@
-package lessons.lesson7.lessoncode.ifAndRandomAndUserInput;
+package lessons.lesson7.lessoncode;
 
 public class MethodsExample {
     public static void main(String[] args) {
