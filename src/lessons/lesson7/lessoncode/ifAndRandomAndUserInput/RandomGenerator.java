@@ -9,6 +9,6 @@ public class RandomGenerator {
         System.out.println(message);
         int randomValue = (int) (Math.random()*(endRangeValue-startRangeValue+1) + startRangeValue);
 
-        return 15;
+        return randomValue;
     }
 }
