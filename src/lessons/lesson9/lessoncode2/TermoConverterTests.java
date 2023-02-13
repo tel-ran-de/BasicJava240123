@@ -30,9 +30,11 @@ public class TermoConverterTests {
         printResult("Test 1 for Fahrenheit ", expectedResultTest, actualResultTest);
 
 
-        tempCelsium = 180;
-        expectedResultTest = 356;
-        actualResultTest = termoTest.FahrenheitConverter(tempCelsium);
+        tempCelsium = 100; // входные данные для работы вашего тестируемого метода
+
+        expectedResultTest = 212;  // ожидаемый вами результат от работы метода (заранее вами просчитанный результат)
+
+        actualResultTest = termoTest.FahrenheitConverter(tempCelsium); // реальный результат работы метода
 
         printResult("Test 2 for Fahrenheit ", expectedResultTest, actualResultTest);
 
