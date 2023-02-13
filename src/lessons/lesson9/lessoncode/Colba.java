@@ -21,8 +21,8 @@ public class Colba {
         this.temp2 = temp2;
     }
 
-    private boolean checkTemp(){
-        return (temp1 > rangeForFirst) && (temp2 < rangeForSecond);
+    public boolean checkTemp(){
+        return (temp1 >= rangeForFirst) && (temp2 <= rangeForSecond);
     }
 
     public void printCheckResult() {
