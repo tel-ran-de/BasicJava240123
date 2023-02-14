@@ -5,7 +5,6 @@ public class AppConverter {
     public static void main(String[] args) {
 
         UserInput ui = new UserInput();
-        Converter converter = new Converter();
 
         double exchangeRateUsdToEuro = ui.userInputDouble("Please enter exchange rate USD to EURO: ");
 
