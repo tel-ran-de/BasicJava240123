@@ -42,8 +42,9 @@ public class CarCollection {
 
 
     public Car createNewCar(){
-        String[] brandArray = {"Mercedes", "BMW", "Volvo", "Toyota", "Ford"};
-        String newBrand = brandArray[(int) (Math.random()*5)];
+        Brand[] brandArray = {new Brand("Mercedes"), new Brand("BMW"),
+                new Brand("Volvo"), new Brand("Toyota"), new Brand( "Ford")};
+        int newBrandIndex = (int) (Math.random()*5);
 
         String[] modelArray = {"model1", "model2", "model3", "model4", "model5"};
         String newModel = modelArray[(int) (Math.random()*5)];
@@ -56,7 +57,7 @@ public class CarCollection {
 
         int newSpeedLimit = 120;
 
-        Car newCar = new Car(new Brand(newBrand),newModel,new TypeOfVehicle(newType),newColor, newSpeedLimit);
+        Car newCar = new Car(brandArray[newBrandIndex],newModel,new TypeOfVehicle(newType),newColor, newSpeedLimit);
 
         return newCar;
     }
@@ -71,7 +72,12 @@ public class CarCollection {
     public void printData(int index, Car carForPrinting){
         System.out.println("=======================");
         System.out.println("Car " + index + " data");
-        System.out.println(carForPrinting);
+        System.out.println("Brand - " + carForPrinting.getBrand());
+        System.out.println("Model - " + carForPrinting.getModel());
+        System.out.println("Type - " + carForPrinting.getModelType());
+        System.out.println("Color - " + carForPrinting.getColor());
+        System.out.println("Speed - " + carForPrinting.getSpeedLimit());
+
     }
 
 }

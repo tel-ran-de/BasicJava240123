@@ -5,11 +5,11 @@ public class Car {
     private Brand brand;
     private String model;
 
-    TypeOfVehicle modelType;
+    private TypeOfVehicle modelType;
 
-    String color;
+    private String color;
 
-    int speedLimit;
+    private int speedLimit;
 
     public Car(Brand brand, String model, TypeOfVehicle modelType, String color, int speedLimit) {
         this.brand = brand;
@@ -17,5 +17,25 @@ public class Car {
         this.modelType = modelType;
         this.color = color;
         this.speedLimit = speedLimit;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public TypeOfVehicle getModelType() {
+        return modelType;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getSpeedLimit() {
+        return speedLimit;
     }
 }

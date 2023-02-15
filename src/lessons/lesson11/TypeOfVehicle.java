@@ -7,4 +7,8 @@ public class TypeOfVehicle {
   public TypeOfVehicle(String generalType) {
     this.generalType = generalType;
   }
+
+  public String getGeneralType() {
+    return generalType;
+  }
 }

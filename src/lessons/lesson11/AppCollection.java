@@ -13,6 +13,7 @@ public class AppCollection {
 
         garage.fillOurCollection();
 
+        garage.printCarCollectionData();
 
 
     }
