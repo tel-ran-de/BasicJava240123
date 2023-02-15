@@ -5,6 +5,14 @@ import java.util.Arrays;
 public class CarCollection {
 
     Car[] ourCollection;
+    Brand[] brandArray = {new Brand("Mercedes"), new Brand("BMW"),
+            new Brand("Volvo"), new Brand("Toyota"), new Brand( "Ford")};
+    String[] modelArray = {"model1", "model2", "model3", "model4", "model5"};
+
+    String[] typeArray = {"sedan", "cabrio", "h-back", "cupe", "truck"};
+
+    String[] colorArray = {"black", "white", "red", "blue", "green"};
+
 
     public void ourCollectionCreate(int collectionSize){
         // мы могли бы создать экземпляр класса GarageUtil прямо здесь
@@ -42,17 +50,12 @@ public class CarCollection {
 
 
     public Car createNewCar(){
-        Brand[] brandArray = {new Brand("Mercedes"), new Brand("BMW"),
-                new Brand("Volvo"), new Brand("Toyota"), new Brand( "Ford")};
         int newBrandIndex = (int) (Math.random()*5);
 
-        String[] modelArray = {"model1", "model2", "model3", "model4", "model5"};
         String newModel = modelArray[(int) (Math.random()*5)];
 
-        String[] typeArray = {"sedan", "cabrio", "h-back", "cupe", "truck"};
         String newType = typeArray[(int) (Math.random()*5)];
 
-        String[] colorArray = {"black", "white", "red", "blue", "green"};
         String newColor = colorArray[(int) (Math.random()*5)];
 
         int newSpeedLimit = 120;
@@ -73,8 +76,11 @@ public class CarCollection {
         System.out.println("=======================");
         System.out.println("Car " + index + " data");
         System.out.println("Brand - " + carForPrinting.getBrand());
+        System.out.println("Brand - " + carForPrinting.getBrand().getBrandName());
+
         System.out.println("Model - " + carForPrinting.getModel());
         System.out.println("Type - " + carForPrinting.getModelType());
+        System.out.println("Type - " + carForPrinting.getModelType().getGeneralType());
         System.out.println("Color - " + carForPrinting.getColor());
         System.out.println("Speed - " + carForPrinting.getSpeedLimit());
 
