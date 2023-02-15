@@ -1,4 +1,4 @@
-package lessons.lesson11;
+package lessons.lesson11.entity;
 
 public class Brand {
 

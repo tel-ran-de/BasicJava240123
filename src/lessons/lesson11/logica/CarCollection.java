@@ -1,15 +1,26 @@
-package lessons.lesson11;
+package lessons.lesson11.logica;
+
+import lessons.lesson11.entity.Brand;
+import lessons.lesson11.entity.Car;
+import lessons.lesson11.entity.TypeOfVehicle;
 
 import java.util.Arrays;
 
 public class CarCollection {
 
     Car[] ourCollection;
-    Brand[] brandArray = {new Brand("Mercedes"), new Brand("BMW"),
-            new Brand("Volvo"), new Brand("Toyota"), new Brand( "Ford")};
+    Brand[] brandArray = {new Brand("Mercedes"),
+            new Brand("BMW"),
+            new Brand("Volvo"),
+            new Brand("Toyota"),
+            new Brand( "Ford")};
     String[] modelArray = {"model1", "model2", "model3", "model4", "model5"};
 
-    String[] typeArray = {"sedan", "cabrio", "h-back", "cupe", "truck"};
+    TypeOfVehicle[] typeArray = {new TypeOfVehicle("sedan"),
+            new TypeOfVehicle("cabrio"),
+            new TypeOfVehicle("h-back"),
+            new TypeOfVehicle("cupe"),
+            new TypeOfVehicle("truck")};
 
     String[] colorArray = {"black", "white", "red", "blue", "green"};
 
@@ -26,7 +37,7 @@ public class CarCollection {
 
     public void fillOurCollection(){
         for (int i = 0; i < ourCollection.length; i++) {
-            ourCollection[i] = createNewCar();
+            ourCollection[i] = createNewCar(getRandomBrand(),getRandomModel(),getRandomType(),getRandomColor());
         }
 
         System.out.println(Arrays.toString(ourCollection));
@@ -49,24 +60,17 @@ public class CarCollection {
     }
 
 
-    public Car createNewCar(){
-        int newBrandIndex = (int) (Math.random()*5);
-
-        String newModel = modelArray[(int) (Math.random()*5)];
-
-        String newType = typeArray[(int) (Math.random()*5)];
-
-        String newColor = colorArray[(int) (Math.random()*5)];
+    public Car createNewCar(Brand newCarBrand, String newCarModel, TypeOfVehicle newCarType, String newCarColor){
 
         int newSpeedLimit = 120;
 
-        Car newCar = new Car(brandArray[newBrandIndex],newModel,new TypeOfVehicle(newType),newColor, newSpeedLimit);
+        Car newCar = new Car(newCarBrand,newCarModel,newCarType,newCarColor, newSpeedLimit);
 
         return newCar;
     }
 
 
-    void printCarCollectionData(){
+    public void printCarCollectionData(){
         for (int i = 0; i < ourCollection.length; i++) {
             printData(i, ourCollection[i]);
         }
@@ -86,4 +90,24 @@ public class CarCollection {
 
     }
 
+
+    public Brand getRandomBrand(){
+        Brand brandForReturn = brandArray[(int) (Math.random()*5)];
+        return brandForReturn;
+    }
+
+    public String getRandomModel(){
+        String modelForReturn =  modelArray[(int) (Math.random()*5)];
+        return modelForReturn;
+    }
+
+    public TypeOfVehicle getRandomType(){
+        TypeOfVehicle typeForReturn = typeArray[(int) (Math.random()*5)];
+        return typeForReturn;
+    }
+
+    public String getRandomColor(){
+        String colorForReturn =  colorArray[(int) (Math.random()*5)];
+        return colorForReturn;
+    }
 }
