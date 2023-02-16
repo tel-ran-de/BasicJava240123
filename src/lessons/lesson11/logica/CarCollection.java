@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class CarCollection {
 
-    Car[] ourCollection;
+    private Car[] ourCollection;
     Brand[] brandArray = {new Brand("Mercedes"),
             new Brand("BMW"),
             new Brand("Volvo"),
@@ -90,6 +90,9 @@ public class CarCollection {
 
     }
 
+    public Car[] getOurCollection() {
+        return ourCollection;
+    }
 
     public Brand getRandomBrand(){
         Brand brandForReturn = brandArray[(int) (Math.random()*5)];

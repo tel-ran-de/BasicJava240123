@@ -3,7 +3,8 @@ package lessons.lesson11.services;
 public class GarageUtil {
 
     public int ourCarCollectionSize(){
-        return 5;
+        UserInput ui = new UserInput();
+        return ui.userInputInteger("Please enter your car collection size: ");
     }
 
 }
