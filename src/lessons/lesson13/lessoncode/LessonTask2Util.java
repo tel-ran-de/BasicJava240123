@@ -1,5 +1,7 @@
 package lessons.lesson13.lessoncode;
 
+import java.util.Arrays;
+
 public class LessonTask2Util {
     public int inputData(String input){
 
@@ -45,9 +47,7 @@ public class LessonTask2Util {
     }
 
     public void printArray(int[] arrayForPrinting, String message){
-        for (int i = arrayForPrinting.length-1; i >= 0; i--) {
-            System.out.print(arrayForPrinting[i]+", ");
-        }
+        System.out.println(Arrays.toString(arrayForPrinting));
         System.out.println(message);
     }
 
