@@ -1,10 +1,11 @@
-package lessons.lesson14.poker;
+package lessons.lesson14.poker.service;
 
+import lessons.lesson14.poker.utils.CardTableUtil;
 import lessons.lesson14.poker.entity.Cards;
 
 public class CardTable {
-
-    Cards cards = new Cards();
+   Cards cards = new Cards();
+   CardTableUtil cardTableUtil= new CardTableUtil();
 
     int numberCardsForEachPlayer = 5;
 
@@ -17,6 +18,11 @@ public void game(){
 
     cards.printDeck(cards.deckShuffle, "--------- Deck after shuffle --------");
 
-}
+    cardTableUtil.createPlayers();
+    cardTableUtil.dealCards(cards.deckShuffle, numberCardsForEachPlayer);
+    cardTableUtil.printPlayers();
+
+    }
+
 
 }
