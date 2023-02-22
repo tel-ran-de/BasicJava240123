@@ -1,5 +1,7 @@
 package lessons.lesson14.poker.entity;
 
+import lessons.lesson14.poker.entity.Card;
+
 public class Player {
     public String name;
     public Card[] playersCards = new Card[5];

@@ -1,6 +1,6 @@
-package lessons.lesson14.poker.service;
+package lessons.lesson14.poker.logic;
 
-import lessons.lesson14.poker.utils.CardTableUtil;
+import lessons.lesson14.poker.service.CardTableUtil;
 import lessons.lesson14.poker.entity.Cards;
 
 public class CardTable {

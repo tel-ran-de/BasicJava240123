@@ -1,6 +1,6 @@
 package lessons.lesson14.poker.entity;
 
-import lessons.lesson11.entity.Car;
+import lessons.lesson14.poker.entity.Card;
 
 public class Cards {
     /*
