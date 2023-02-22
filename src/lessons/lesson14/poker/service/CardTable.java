@@ -21,8 +21,13 @@ public void game(){
     cardTableUtil.createPlayers();
     cardTableUtil.dealCards(cards.deckShuffle, numberCardsForEachPlayer);
     cardTableUtil.printPlayers();
+    cardTableUtil.cleanDeck(cards.deckShuffle, numberCardsForEachPlayer);
 
-    }
+    cards.printDeck(cards.deckShuffle, "--------- Deck after deal --------");
+
+    cardTableUtil.printPlayers();
+
+}
 
 
 }

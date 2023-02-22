@@ -32,12 +32,25 @@ public class CardTableUtil {
     }
 
     public void printPlayers(){
+
+
         for (int i = 0; i < players.length; i++) {
             System.out.println("------" + players[i].name + "--------------");
-            System.out.println(Arrays.toString(players[i].playersCards));
-
+            printCard(players[i].playersCards);
+            System.out.println();
         }
-
     }
 
+    public void printCard(Card[] cards){
+        for (int i = 0; i < cards.length; i++) {
+            System.out.print(cards[i].value + cards[i].suit + ", " );
+        }
+    }
+
+    public void cleanDeck(Card[] deck, int numberCardsForEachPlayers){
+        Card emptyCardReference = new Card(" ", " ");
+        for (int i = 0; i < (numberCardsForEachPlayers*numberOfPayers); i++) {
+            deck[i] = emptyCardReference;
+        }
+    }
 }
