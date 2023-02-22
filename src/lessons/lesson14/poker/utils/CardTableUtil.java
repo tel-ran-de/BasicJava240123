@@ -36,7 +36,8 @@ public class CardTableUtil {
 
         for (int i = 0; i < players.length; i++) {
             System.out.println("------" + players[i].name + "--------------");
-            printCard(players[i].playersCards);
+            System.out.println(Arrays.toString(players[i].playersCards));
+            //printCard(players[i].playersCards);
             System.out.println();
         }
     }
