@@ -1,7 +1,7 @@
-package lessons.lesson14.poker.logic;
+package lessons.lesson14_15.poker.logic;
 
-import lessons.lesson14.poker.service.CardTableUtil;
-import lessons.lesson14.poker.entity.Cards;
+import lessons.lesson14_15.poker.service.CardTableUtil;
+import lessons.lesson14_15.poker.entity.Cards;
 
 public class CardTable {
    Cards cards = new Cards();

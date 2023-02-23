@@ -1,4 +1,4 @@
-package lessons.lesson14.poker.entity;
+package lessons.lesson14_15.poker.entity;
 
 public class Card {
     public String value;

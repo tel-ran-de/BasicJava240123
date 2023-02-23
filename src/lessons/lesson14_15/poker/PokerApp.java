@@ -1,7 +1,7 @@
-package lessons.lesson14.poker;
+package lessons.lesson14_15.poker;
 
 
-import lessons.lesson14.poker.logic.CardTable;
+import lessons.lesson14_15.poker.logic.CardTable;
 
 public class PokerApp {
 

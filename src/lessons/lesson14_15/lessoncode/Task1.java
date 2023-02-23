@@ -1,4 +1,4 @@
-package lessons.lesson14.lessoncode;
+package lessons.lesson14_15.lessoncode;
 
 public class Task1 {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package lessons.lesson14.poker.service;
+package lessons.lesson14_15.poker.service;
 
 
-import lessons.lesson14.poker.entity.Player;
-import lessons.lesson14.poker.entity.Card;
+import lessons.lesson14_15.poker.entity.Player;
+import lessons.lesson14_15.poker.entity.Card;
 
 import java.util.Arrays;
 

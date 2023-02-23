@@ -1,6 +1,4 @@
-package lessons.lesson14.poker.entity;
-
-import lessons.lesson14.poker.entity.Card;
+package lessons.lesson14_15.poker.entity;
 
 public class Player {
     public String name;

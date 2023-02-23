@@ -1,4 +1,4 @@
-package lessons.lesson14.poker.service;
+package lessons.lesson14_15.poker.service;
 
 public class InputData {
     public int enterNumberOfPlayers(){
