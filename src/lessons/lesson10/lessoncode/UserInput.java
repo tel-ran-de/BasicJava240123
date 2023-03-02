@@ -14,6 +14,7 @@ public class UserInput {
     public double userInputDouble(String message){
         System.out.println(message);
         Scanner scanner = new Scanner(System.in);
+
         return scanner.nextDouble();
     }
 }
